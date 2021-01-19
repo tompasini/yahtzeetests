@@ -120,5 +120,30 @@ namespace YahtzeeTests
             Assert.Equal(expectedScore, actualScore);
         }
 
+        //Small Straight tests
+
+        [Fact]
+        public void Small_Straight_Given_One_Through_Four()
+        {
+            Scorer scorer = new Scorer();
+            int[] dice = new int[] { 1, 2, 3, 4, 1 };
+            int expectedSctore = 30;
+            int actualScore = scorer.SmallStraight(dice);
+            Assert.Equal(expectedSctore, actualScore);
+        }
+
+        [Theory]
+        [InlineData(new int[] { 1, 2, 3, 4, 5 }, 30)]
+        [InlineData(new int[] { 2, 2, 2, }, 0)]
+        [InlineData(new int[] { 1, 2, 3, 4, 1 }, 30)]
+        [InlineData(new int[] { 2, 3, 4, 5, 5 }, 30)]
+        [InlineData(new int[] { 3, 4, 6, 5, 6 }, 30)]
+        [InlineData(new int[] { 1, 2, 3, 5, 5 }, 0)]
+        public void Small_Straight(int[] dice, int expectedScore)
+        {
+            Scorer scorer = new Scorer();
+            int actualScore = scorer.SmallStraight(dice);
+            Assert.Equal(expectedScore, actualScore);
+        }
     }
 }

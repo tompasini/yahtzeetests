@@ -5627,11 +5627,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pasin\\source\\repos\\Yahtzee\\Yahtzee\\Yahtzee.csproj",
+      "projectUniqueName": "C:\\source\\personal\\Yahtzee\\Yahtzee\\Yahtzee.csproj",
       "projectName": "Yahtzee",
-      "projectPath": "C:\\Users\\pasin\\source\\repos\\Yahtzee\\Yahtzee\\Yahtzee.csproj",
+      "projectPath": "C:\\source\\personal\\Yahtzee\\Yahtzee\\Yahtzee.csproj",
       "packagesPath": "C:\\Users\\pasin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pasin\\source\\repos\\Yahtzee\\Yahtzee\\obj\\",
+      "outputPath": "C:\\source\\personal\\Yahtzee\\Yahtzee\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pasin\\AppData\\Roaming\\NuGet\\NuGet.Config",
